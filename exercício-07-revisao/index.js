@@ -1,4 +1,4 @@
-const numeros = [5, 12, 8, 3, 21, 7]
+const numeros = [5, 12, 8, 3, 21, 7,]
 
 // DESCOBRIR O MAIOR NÚMERO
 // let maior = numeros[0]
@@ -25,11 +25,14 @@ const numeros = [5, 12, 8, 3, 21, 7]
 
 // DESCOBRIR A MÉDIA DOS VALORES
 
-let soma = 0
-let media = 0
+// let soma = 0
+// let media = 0
 
-for (i = 0; i < numeros.length; i++) {
-    soma = soma + numeros[i]
-}
-media = soma / numeros.length
-console.log(media.toFixed(2))
+// for (i = 0; i < numeros.length; i++) {
+//     soma = soma + numeros[i]
+// }
+// media = soma / numeros.length
+// console.log(media.toFixed(2))
+
+
+
