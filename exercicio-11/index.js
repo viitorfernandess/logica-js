@@ -5,3 +5,17 @@ const pessoas = [
   { nome: "João", idade: 10, renda: 3500, pcd: false },
   { nome: "Fernanda", idade: 70, renda: 2500, pcd: false }
 ]
+
+let aprovados = []
+let negados = []
+
+for (i = 0; i < pessoas.length; i++) {
+  if ((pessoas[i].idade >= 60 || pessoas[i].idade < 18 || pessoas[i].pcd == true) && pessoas[i].renda <= 3000) {
+    aprovados.push(pessoas[i])
+  } else {
+    negados.push(pessoas[i])
+  }
+} 
+
+console.log(aprovados)
+console.log(negados)
