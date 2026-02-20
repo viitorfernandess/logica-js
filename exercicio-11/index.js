@@ -15,7 +15,7 @@ for (i = 0; i < pessoas.length; i++) {
   } else {
     negados.push(pessoas[i])
   }
-} 
+}
 
 console.log(aprovados)
 console.log(negados)
