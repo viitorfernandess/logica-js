@@ -3,13 +3,24 @@ const produtos = [
     { nome: "Mouse", preco: 80, estoque: 25 },
     { nome: "Teclado", preco: 150, estoque: 0 },
     { nome: "Monitor", preco: 1200, estoque: 5 },
-    { nome: "Cadeira Gamer", preco: 900, estoque: 2 }
+    { nome: "Cadeira Gamer", preco: 900, estoque: 0 }
 ]
 
 let valorEmEstoque = 0
+let estoqueZerado = []
 
 for (let i = 0; i < produtos.length; i++) {
     valorEmEstoque += produtos[i].preco * produtos[i].estoque
+
+}
+
+for (let i = 0; i < produtos.length; i++) {
+    if (produtos[i].estoque === 0) {
+        estoqueZerado.push(produtos[i])
+    }
 }
 
 console.log(`O valor em estoque é de: R$ ${valorEmEstoque}`)
+console.log(`Os produtos com estoque zerados são:`, estoqueZerado)
+
+
