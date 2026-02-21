@@ -8,8 +8,8 @@ const produtos = [
 
 let valorEmEstoque = 0
 
-for (i = 0; i < produtos.length; i++) {
+for (let i = 0; i < produtos.length; i++) {
     valorEmEstoque += produtos[i].preco * produtos[i].estoque
 }
 
-console.log(valorEmEstoque)
+console.log(`O valor em estoque é de: R$ ${valorEmEstoque}`)
