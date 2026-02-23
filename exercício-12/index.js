@@ -9,25 +9,37 @@ const produtos = [
 let valorEmEstoque = 0
 let estoqueZerado = []
 let maiorValor = produtos[0]
+let contagem = 0
 
-
+// Valor em estoque
 for (let i = 0; i < produtos.length; i++) {
     valorEmEstoque += produtos[i].preco * produtos[i].estoque
 }
 
+// Produtos com estoque zerado
 for (let i = 0; i < produtos.length; i++) {
     if (produtos[i].estoque === 0) {
         estoqueZerado.push(produtos[i])
     }
 }
 
+// Produto com maior valor
 for (let i = 1; i < produtos.length; i++) {
     if (produtos[i].preco > maiorValor.preco) {
         maiorValor = produtos[i]
     }
 }
 
+// Quantidade de produtos com estoque zerado
+for (let i = 0; i < produtos.length; i++) {
+    if (produtos[i].estoque === 0) {
+        contagem++
+    }
+}
+
+
+
 console.log(`O valor em estoque é de: R$ ${valorEmEstoque}`)
 console.log(`Os produtos com estoque zerados são:`, estoqueZerado)
-
-console.log(`O produtos de maior valor é:`, maiorValor)
+console.log(`O produto de maior valor é:`, maiorValor)
+console.log(`A quantidade de produtos com estoque zerado é:`, contagem)
