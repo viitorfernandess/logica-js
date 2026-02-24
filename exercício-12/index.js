@@ -45,7 +45,6 @@ for (let i = 0; i < produtos.length; i++) {
 valorMedia = valorMedia / produtos.length
 
 
-
 console.log(`O valor em estoque é de: R$ ${valorEmEstoque}`)
 console.log(`Os produtos com estoque zerados são:`, estoqueZerado)
 console.log(`O produto de maior valor é:`, maiorValor)
