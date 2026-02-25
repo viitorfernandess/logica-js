@@ -14,14 +14,18 @@ const pedidos = [
 
 let totalVendido = 0
 
+
 for ( let i = 0; i < pedidos.length; i++) {
     for ( let j = 0; j < produtos.length; j++) {
         if (pedidos[i].idProduto === produtos[j].id) {
             if (produtos[j].estoque >= pedidos[i].quantidade) {
                 totalVendido += pedidos[i].quantidade * produtos[j].preco
+
+                produtos[j].estoque = produtos[j].estoque - pedidos[i].quantidade
             }
         }
     }
 }
 
 console.log(totalVendido)
+console.log(produtos)
