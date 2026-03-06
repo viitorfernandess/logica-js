@@ -9,8 +9,19 @@ function contar(n) {
     }
 
     return numeros
-
 }
 
-const resultado = contar(10)
-console.log(resultado)
+const lista = contar(10)
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i] % 3 === 0) {
+        lista[i] = 'buzz'
+    }
+    else if (lista[i] % 5 === 0) {
+        lista[i] = 'fizz'
+    }
+}
+
+console.log(lista)
+
+
+
