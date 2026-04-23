@@ -1,9 +1,3 @@
-// Problema: Inverter uma lista ligada simples (singly linked list)
-// Dado o nó inicial (head), devemos reverter a ordem dos nós,
-// fazendo com que cada nó aponte para o anterior em vez do próximo.
-// Exemplo: [1,2,3,4,5] -> [5,4,3,2,1]
-// Desafio: resolver de forma iterativa e também recursiva.
-
 
 class ListNode {
   constructor(val, next = null) {
