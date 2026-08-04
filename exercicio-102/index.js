@@ -33,7 +33,6 @@ function findWords(words) {
         let isValid = true
 
         for (let j = 1; j < word.length; j++) {
-
             if (!line.includes(word[j])) {
                 isValid = false
                 break
@@ -44,7 +43,6 @@ function findWords(words) {
             result.push(words[i])
         }
     }
-
     return result
 }
 
