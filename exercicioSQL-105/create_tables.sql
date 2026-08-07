@@ -1,0 +1,4 @@
+CREATE TABLE Persons (
+id INT PRIMARY KEY, 
+email VARCHAR(255)
+);
