@@ -9,6 +9,7 @@ function isomorphicStrings(s, t) {
     }
 
     const mapa = {}
+
     const mapaInverso = {}
 
     for (let i = 0; i < s.length; i++) {
@@ -20,18 +21,16 @@ function isomorphicStrings(s, t) {
         } else {
             mapa[s[i]] = t[i]
         }
-
-        if (t[i] in mapaInverso) {
-
-            if (mapaInverso[t[i]] !== s[i]) {
-                return false
-            }
-        } else {
-            mapaInverso[t[i]] = s[i]
-        }
     }
 
-    return true
+    if (t[i] in mapaInverso) {
+
+        if (mapaInverso[t[i]] !== s[i]) {
+            return false
+        }
+    } else {
+        mapaInverso[t[i]] = s[i]
+    }
 }
 
 console.log(isomorphicStrings("aa", "cb"))
